@@ -1,0 +1,24 @@
+{
+    "corpus_type": "medmentions-st21pv",
+    "annotation_oov_concept": "CUI-less",
+    "corpus_dir": "data/medmentions/MedMentions/",
+    "databases": "data/umls2017aa_st21pv.sqlout",
+    "preprocess_cache_path": "data/medmentions/preprocess-medmentions-st21pv_scibert_umls2017aa.json.gz",
+
+    "encoder": "bert",
+    "encoder_pool_target": "entity",
+    "bert": "allenai/scibert_scivocab_uncased",
+    "feature_dim": 128,
+    "use_feature_bias": true,
+    "dropout_output_rate": 0.0,
+    "output_layer": "cosine",
+    "cosine_scale": 28.623,
+    "arcface_margin": 0.612213,
+
+    "learning_rate": 4.98807e-05,
+    "batch_size": 128,
+    "max_epoch": 100,
+    "save_every_epoch": 50,
+    "max_token_length": 27,
+    "do_train_database": true
+}
